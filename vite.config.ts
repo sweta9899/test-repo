@@ -10,6 +10,7 @@ export default defineConfig({
         target: 'https://admin-moderator-backend-staging.up.railway.app',
         changeOrigin: true,
         secure: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
