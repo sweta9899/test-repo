@@ -3,7 +3,7 @@ import axios from "axios";
 const api = axios.create({
   baseURL:
     import.meta.env.VITE_API_URL ??
-    "https://admin-moderator-backend-staging.up.railway.app",
+    "https://admin-moderator-backend-staging.up.railway.app/api",
   headers: {
     "Content-Type": "application/json",
   },
