@@ -1,0 +1,7 @@
+.app-sidebar { position: fixed; top: 74px; bottom: 0; left: 0; z-index: 2; width: 214px; box-sizing: border-box; border-right: 1px solid #e6eaf1; background: #fff; }
+.app-sidebar nav { display: flex; flex-direction: column; gap: 4px; padding-top: 22px; }
+.app-sidebar a { display: flex; align-items: center; gap: 12px; height: 42px; box-sizing: border-box; padding: 0 16px; border-left: 3px solid transparent; border-radius: 0 8px 8px 0; color: #6f788a; font-size: 14px; text-decoration: none; }
+.app-sidebar a span { width: 16px; color: #8290a5; font-size: 19px; text-align: center; }
+.app-sidebar a.active { border-left-color: #547af0; background: #f3f6ff; color: #496ee3; }
+.app-sidebar a.active span { color: #496ee3; }
+@media (max-width: 700px) { .app-sidebar { position: static; width: 100%; border-right: 0; border-bottom: 1px solid #e6eaf1; } .app-sidebar nav { flex-direction: row; overflow-x: auto; padding: 8px; } .app-sidebar a { white-space: nowrap; } }

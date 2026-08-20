@@ -1,0 +1,11 @@
+.app-header { position: fixed; top: 0; right: 0; left: 0; z-index: 3; display: grid; height: 74px; box-sizing: border-box; grid-template-columns: 214px 1fr auto; align-items: center; border-bottom: 1px solid #e6eaf1; background: #fff; color: #4a5568; }
+.app-brand { padding-left: 18px; color: #1f5fe5; font-size: 27px; font-weight: 800; letter-spacing: -1.6px; }
+.app-brand span { color: #2458d8; }
+.header-assignment { justify-self: center; color: #667085; font-size: 13px; }
+.header-assignment span, .header-user > span:last-child { margin-left: 8px; }
+.header-user { display: flex; align-items: center; gap: 12px; padding-right: 20px; font-size: 13px; }
+.header-user strong, .header-user small { display: block; }
+.header-user small { margin-top: 3px; color: #7b8494; font-size: 11px; }
+.notification { font-size: 24px; }
+.avatar { display: grid; width: 38px; height: 38px; place-items: center; border: 2px solid #f0c85a; border-radius: 50%; background: #f0b47e; color: #fff; font-weight: 700; }
+@media (max-width: 700px) { .app-header { grid-template-columns: 1fr auto; } .header-assignment { display: none; } .header-user > span:not(.avatar):not(:last-child) { display: none; } }
